@@ -33,5 +33,25 @@
         font-weight: 300;
         font-size: 60px;
         color: white;
+
+        // if h2 class is green
+        &.green{
+            color: lighten($color: $green, $amount: 15%);
+        }
+
+        // if h2 class is red
+        &.red{
+            color: lighten($color: $red, $amount: 15%);
+        }
+    }
+}
+
+.add-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .add-item-container{
+        width: 680px;
     }
 }
